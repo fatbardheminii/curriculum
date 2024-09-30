@@ -13,6 +13,8 @@ This section contains a general overview of topics that you will learn in this l
 
 #### git push -\-force
 
+- Avoid push -\-force at all costs.
+
 Let's say you're no longer working on a project all by yourself, but with someone else. You want to push a branch you've made changes on to a remote repository. Normally, Git will only let you push your changes if you've already updated your local branch with the latest commits from this remote.
 
 If you haven't updated your local branch, and you're attempting to `git push` a commit which would create a conflict on the remote repository, you'll get an error message. This is actually a great thing! This is a safety mechanism to prevent you from overwriting commits created by the people you're working with, which could be disastrous. You get the error because your history is outdated.
